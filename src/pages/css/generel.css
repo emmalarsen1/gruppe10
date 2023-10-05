@@ -1,0 +1,32 @@
+/* ------ 
+  Resets / normalize
+------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 1.6;
+  font-family: "Sora";
+  background-color: #ebfbfe;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  color: #ebfbfe;
+}
