@@ -28,5 +28,12 @@ h2,
 h3,
 p,
 a {
-  color: #ebfbfe;
+  color: #2e3192;
+  font-family: "Arimo Variable", sans-serif;
+}
+
+/*************** index ***************/
+.fakebon {
+  width: 40%;
+  margin-left: 30%;
 }
