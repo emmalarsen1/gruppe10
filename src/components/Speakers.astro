@@ -1,0 +1,17 @@
+---
+const {data} =Astro.props;
+console.log(data);
+---
+
+<article>
+    <img src="" alt="placeholder">
+    <h2>{data.name}</h2>
+    <p>{data.title}</p>
+</article>
+
+<style>
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+</style>
