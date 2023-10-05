@@ -1,5 +1,6 @@
 ---
-
+import TopNavigation from "../components/TopNavigation.astro"
+import BottomNavigation from "../components/BottomNavigation.astro"
 ---
 
 <html lang="en">
@@ -8,9 +9,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>index</title>
+		<title>uxcopenhagen</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1></h1>
+	<TopNavigation/>
+	<main></main>
+	<BottomNavigation/>
 	</body>
 </html>
