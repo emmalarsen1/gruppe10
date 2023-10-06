@@ -1,22 +1,56 @@
 ---
-import Button from "../components/Button.astro"
-import MainLayouts from "../layouts/MainLayouts.astro"
+import Button from "../components/Button.astro";
+import MainLayouts from "../layouts/MainLayouts.astro";
 ---
+
 <MainLayouts>
-<section class="bongrid">
-    <p>The theme for UX Copenhagen 2024 is:</p>
-<h1>DEGROWTH & CONSUMERISM</h1>
-<h2>CONFERENCE 20-21 MARCH 2024</h2>
-<Button ButtonTitle="TICKETS" ButtonLink="/tickets"/>
-<img class="fakebon" src="../../img/fakebon.webp" alt="fakebon">
-</section>
-<video src=""></video>
-<section>
-</section>
+  <section class="bongrid">
+    <div class="indextext">
+      <p>The theme for UX Copenhagen 2024 is:</p>
+      <h1>DEGROWTH & CONSUMERISM</h1>
+      <h2 class="indexh2">CONFERENCE 20-21 MARCH 2024</h2>
+      <Button ButtonTitle="TICKETS" ButtonLink="/tickets" />
+    </div>
+    <img class="fakebon" src="../../img/fakebon.webp" alt="fakebon" />
+  </section>
+  <section>
+    <div class="videobox"></div>
+    <video width="100%" height="auto" controls autoplay loop>
+      <source src="../mov/uxfeel.webm" type="video/webm" />
+       Your browser does not support the video tag.
+    </video>
+  </section>
+  <section></section>
 </MainLayouts>
 
 <style>
-    .bongrid{
-        display: grid;
-    }
+  .bongrid {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: column;
+  }
+
+  .fakebon {
+    width: 50%;
+    margin-left: 49%;
+    margin-top: -8%;
+    z-index: -10;
+  }
+  .indexh2 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .indextext {
+    margin-top: 5%;
+  }
+  .videobox {
+    background-color: #ffe7e9;
+    z-index: -10;
+    width: 110%;
+    height: 110%;
+  }
 </style>
