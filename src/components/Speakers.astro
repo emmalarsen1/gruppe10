@@ -2,16 +2,18 @@
 const {data} =Astro.props;
 console.log(data);
 ---
-
+<a href={`/name/${data.speaker}`}>
 <article>
-    <img src="" alt="placeholder">
+    <img src={data.image} alt="placeholder">
     <h2>{data.name}</h2>
     <p>{data.title}</p>
 </article>
+</a>
 
 <style>
     img {
         max-width: 300px;
         max-height: 300px;
+        border-radius: 50%;
     }
 </style>
