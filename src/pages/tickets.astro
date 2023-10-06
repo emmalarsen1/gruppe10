@@ -2,5 +2,42 @@
 import MainLayouts from "../layouts/MainLayouts.astro"
 ---
 <MainLayouts>
-	
+	<section>
+        <div>
+        <img src="../img/billet1.svg" alt="billet1">
+        <h2>LIVE-EVENT</h2>
+        <p>Join us live* in Copenhagen!</p>
+        <h3>DKK 6,500</h3>
+        <button>ADD TO CART</button>
+        </div>
+        <div>
+            <img src="../img/billet1.svg" alt="billet1">
+            <h2>LIVE-STREAM</h2>
+            <p>Watch the full live-stream !</p>
+            <h3>DKK 3,500</h3>
+            <button>ADD TO CART</button>
+            </div>
+            <div>
+                <img src="../img/billet1.svg" alt="billet1">
+                <h2>RECORDED-EVENT</h2>
+                <p>Watch the full footage !</p>
+                <h3>DKK 2,400</h3>
+                <button>ADD TO CART</button>
+                </div>
+                <div>
+                    <img src="../img/billet1.svg" alt="billet1">
+                    <h2>GROUP-EVENT</h2>
+                    <p>Please contact us </p>
+                    <h3>Depends</h3>
+                    <button>ADD TO CART</button>
+                    </div>
+    </section>
 </MainLayouts>
+<style>
+    section{
+    display: flex;
+    gap: 3rem;
+    margin: 5%;
+    justify-content: center;
+    }
+</style>
