@@ -40,9 +40,35 @@ console.log(myData);
 ---
 
 <MainLayouts>
+    <section class="speakerpage">
 	    <img src={myData.image} alt="placeholder">
+        <div class="text">
     <h1>{myData.name}</h1>
     <h2>{myData.title}</h2>
     <p>{myData.info}</p>
     <h4>{myData.talk}</h4>
+    </div>
+    </section>
 </MainLayouts>
+
+<style>
+section {
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 500px;
+    }
+    .text {
+        display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    }
+</style>
