@@ -16,7 +16,7 @@ import MainLayouts from "../layouts/MainLayouts.astro";
   </section>
   <section>
     <div class="videobox"></div>
-    <video width="100%" height="auto" controls autoplay loop>
+    <video width="100%"  controls autoplay loop>
       <source src="../mov/uxfeel.webm" type="video/webm" />
        Your browser does not support the video tag.
     </video>
@@ -50,8 +50,18 @@ import MainLayouts from "../layouts/MainLayouts.astro";
   }
   .videobox {
     background-color: #ffe7e9;
-    z-index: -10;
-    width: 110%;
-    height: 110%;
+    padding: 30px;
   }
+  @media (min-width: 500px){
+     video{
+   object-fit: cover;
+  align-self: stretch;
+  height:450px;
+  }
+  }
+ main{
+  max-width: none;
+  margin: 0;
+ }
+
 </style>
