@@ -4,7 +4,9 @@ console.log(data);
 ---
 <a href={`/name/${data.speaker}`}>
 <article>
+    <div class="imgfolder">
     <img src={data.image} alt="placeholder">
+    </div>
     <h2>{data.name}</h2>
     <p>{data.title}</p>
 </article>
@@ -22,11 +24,28 @@ console.log(data);
         margin-top: 7px;
     }
     img {
+        display: block;
         width: 100%;
-        height: auto;
+        height: 100%;
         border-radius: 50%;
         display: flex;
         align-items: center;
+    }
+    .imgfolder {
+        display: inline-block; 
+        overflow: hidden;
+        position: relative; 
+    }
+
+    .imgfolder::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 0px;
+        bottom: 0px;
+        border: 1px solid #FFB6BE;
+        z-index: -1;
     }
     a {
         text-decoration: none;
@@ -36,7 +55,7 @@ console.log(data);
             @media (max-width: 1250px) {
                 article {
         display: flex;
-align-items: center;
+        align-items: center;
         flex-direction: column;
     }       
         }
