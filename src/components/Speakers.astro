@@ -11,26 +11,55 @@ console.log(data);
 </a>
 
 <style>
-    img {
-        width: 300px;
-        height: auto;
-        max-width: 300px;
-        max-height: 300px;
-        border-radius: 50%;
+    article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
-    a {
-        text-decoration: none;
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
         display: flex;
         align-items: center;
     }
+    a {
+        text-decoration: none;
+    }
 
     /*mobil*/
-        @media (max-width: 750px) {
-            a {
-                display: flex;
-                align-items: center;
-            }
-            
+            @media (max-width: 1250px) {
+                article {
+        display: flex;
+align-items: center;
+        flex-direction: column;
+    }       
         }
-        
+                @media (max-width: 900px) {
+                article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }    
+        }
+                    @media (max-width: 500px) {
+
+    h2 {
+        display: flex;
+        align-items: center;
+    }
+        }
+        p {
+                    display: flex;
+        justify-content: center;
+        }
+        img {
+                    display: flex;
+        align-items: center;
+        }
 </style>

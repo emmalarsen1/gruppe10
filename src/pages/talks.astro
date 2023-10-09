@@ -11,6 +11,8 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
 
 ---
 <MainLayouts>
+    <h1>MEET OUR 2024 SPEAKERS. <br />
+WE’ERE ADDING MORE EVERY WEEK.</h1>
 <section class="speakers">
     {
         data.map((speaker) => {
@@ -24,20 +26,24 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
         section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 3rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        overflow: hidden;
+        gap: 20px;
     }
         /*mobil*/
-        @media (max-width: 750px) {
+                @media (max-width: 1250px) {
+            section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            }
+        }
+        @media (max-width: 900px) {
             section {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             }
         }
-                    @media (max-width: 550px) {
+                    @media (max-width: 500px) {
             section {
             display: grid;
             grid-template-columns: 1fr;
