@@ -7,19 +7,20 @@ import MainLayouts from "../layouts/MainLayouts.astro"
     <div class="grid1_1">
     <div>
     <h2>WHAT IS UX COPENHAGEN</h2>
-    <p>Welcome to the UX Copenhagen conference – Denmark’s most inspirational human experience conference, covering subjects like user experience, content, strategy, and research under a new theme for each year. We will present you with two days filled with superb content from 20+ local and international speakers, hands-on workshops, inspiration, networking, new knowledge, and new insights.</p>
+    <p class="text">Welcome to the UX Copenhagen conference – Denmark’s most inspirational human experience conference, covering subjects like user experience, content, strategy, and research under a new theme for each year. We will present you with two days filled with superb content from 20+ local and international speakers, hands-on workshops, inspiration, networking, new knowledge, and new insights.</p>
     </div>
     <div>
         <img src="../../img/helle_lone.webp" alt="helle og lone">
     </div>
+     <br>
     </div>
-     <div class="grid1_1">
+     <div class="grid1_1 space">
          <div>
         <img src="../../img/om_os.webp" alt="konference">
     </div>
     <div>
     <h2>THIS YEAR'S THEME: <br> DEGROWTH & CONSUMERISM</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident blanditiis quis ex dolore ullam cupiditate quidem itaque temporibus earum nemo, hic at, sit voluptas minus, sunt culpa molestiae sed illo?</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident blanditiis quis ex dolore ullam cupiditate quidem itaque temporibus earum nemo, hic at, sit voluptas minus, sunt culpa molestiae sed illo?</p>
     </div>
    
     </div>
@@ -28,10 +29,27 @@ import MainLayouts from "../layouts/MainLayouts.astro"
 </MainLayouts>
 
 <style>
+    @media (min-width: 700px){  
 .grid1_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
+}
+img{
+    width:90%;
+}
+.text{
+    padding-right: 50px;
+}
+
+.space{
+    margin-top: 90px;
+margin-bottom: 90px;
+}
+    }
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 </style>
