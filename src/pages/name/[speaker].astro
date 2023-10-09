@@ -30,7 +30,7 @@ console.log(myData);
 	    <img src={myData.image} alt="placeholder">
         <div class="text">
     <h1>{myData.name}</h1>
-    <h2>{myData.title}</h2>
+    <div class="subhead">{myData.title}</div>
     <p>{myData.info}</p>
     <h4>{myData.talk}</h4>
     </div>
@@ -40,8 +40,7 @@ console.log(myData);
 <style>
         .speakerpage {
             display: flex;
-            justify-content: center;
-            padding: 20px;
+            align-items: center;
             gap: 5rem;
         }
 
@@ -49,9 +48,9 @@ console.log(myData);
             width: 500px;
             border-radius: 50%;
         }
-
-        .text {
-            flex: 1;
+        .subhead {
+          font-family: "Arimo Variable", sans-serif;
+          color: #284D3B;
         }
 
         @media (max-width: 750px) {
@@ -59,8 +58,7 @@ console.log(myData);
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: 20px;
-            gap: 5rem;
+            gap: 1rem;
         }
         }
 </style>
