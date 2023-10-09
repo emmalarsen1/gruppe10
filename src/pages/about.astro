@@ -6,14 +6,33 @@ import MainLayouts from "../layouts/MainLayouts.astro"
 	<h1>About us</h1>
     <div class="grid1_1">
     <div>
-    <h2>WHAT IS UX COPENHAGEN</h2>
-    <p class="text">Welcome to the UX Copenhagen conference – Denmark’s most inspirational human experience conference, covering subjects like user experience, content, strategy, and research under a new theme for each year. We will present you with two days filled with superb content from 20+ local and international speakers, hands-on workshops, inspiration, networking, new knowledge, and new insights.</p>
+    <h2>WHAT IS UX COPENHAGEN?</h2>
+    <br>
+    <ol class="timeline">
+        <li>
+            <h3>General Information:</h3>
+            <li class="punkt"><p>Participants: Approximately 200 attendees annually.</p></li>
+            <li class="punkt"><p>International Attendance: 76% of participants come from around the globe.</li>
+            <li class="punkt"><p>Attendee Breakdown: 50% UX Designers, 25% Managers, 25% Other Creatives.</li>
+        </li>
+        <br>
+        <li>
+            <h3>Organizational Details:</h3>
+            <li class="punkt"><p>Leadership: Helle Martens primarily manages the conference.</p></li>
+            <li class="punkt"><p>Principles: Emphasis on gender balance in speakers, inclusion of diverse perspectives, and promoting new voices.</li>
+            <li class="punkt"><p>Financial Structure: Budget relies on ticket sales and limited sponsorships.</li>
+        </li>
+        <li>
+            <p>The conference continues to provide a valuable platform for networking and learning in the UX and design community.</p>
+        </li>
+    </ol>
     </div>
     <div class="container">
         <img class="foreground-image" src="../../img/helle_lone.webp" alt="helle og lone">
     <img class="background-image_1" src="../../img/pink.svg" alt="firkant_pink">
         <img class="background-image" src="../../img/green.svg" alt="firkant_green">
     </div>
+     <br>
      <br>
     </div>
      <div class="grid1_1 space">
@@ -24,7 +43,15 @@ import MainLayouts from "../layouts/MainLayouts.astro"
     </div>
     <div>
     <h2>THIS YEAR'S THEME: <br> DEGROWTH & CONSUMERISM</h2>
-    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident blanditiis quis ex dolore ullam cupiditate quidem itaque temporibus earum nemo, hic at, sit voluptas minus, sunt culpa molestiae sed illo?</p>
+    <p>Angelos Arnis, the closing keynote for UX Copenhagen 2023 stated very bluntly </p>
+    <br>
+    <h2 class="citat">“There is no planet B”</h2>
+     <br>
+    <p class="text">Our world has long celebrated relentless growth, leading to overproduction and overconsumption. However, resources are dwindling, and business as usual is no longer viable. <br><br>
+
+On March 20-21, 2024, we'll tackle climate change, consumerism, and waste. Discussions will focus on degrowth and unlearning harmful practices. We'll explore how consumerism must evolve for the planet's survival, showcasing practical examples and fostering dialogue on designers' role in driving systemic change for sustainability. <br><br>
+
+The conference will be a hybrid event, offering in-person and online participation. It will feature live workshops, Q&A sessions, raffles, book sales, and ample networking opportunities.</p>
     </div>
    
     </div>
@@ -37,14 +64,11 @@ import MainLayouts from "../layouts/MainLayouts.astro"
 .grid1_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:20px;
+    gap:40px;
 }
 img{
     width:90%;
   
-}
-.text{
-    padding-right: 50px;
 }
 
 .space{
@@ -66,6 +90,7 @@ margin-bottom: 90px;
             width: 300px;
             height: 400px;
             transition: opacity 0.5s;
+            margin: 30px;
         }
          .background-image_1 {
             position: absolute;
@@ -74,6 +99,7 @@ margin-bottom: 90px;
             width: 300px;
             height: 400px;
             transition: opacity 0.5s;
+               margin: 30px;
         }
         
         .foreground-image {
@@ -119,6 +145,10 @@ margin-bottom: 90px;
          .container:hover .background-image_2 {
             opacity: 1;
         }
+        .citat{
+            font-style: italic;
+            color: #FFB6BE;
+        }
 }
 h1{
     font-size: 3rem;
@@ -127,5 +157,36 @@ h1{
 img .background-image .background-image_1 {
    visibility: hidden;
 }
+li{
+     list-style-type: none;
+}
+li p{
+    font-size: 13px;
+}
+.punkt{
+    list-style-type: circle;
+    color: #2e3192;
+}
+p{
+    font-size: 13px;
+}
+
+.citat {
+  width: 50%;
+  margin-top: -2%;
+  margin-left: 5%;
+  padding: 0;
+  animation-name: ind_fra_højre;
+  animation-duration: 2s;
+}
+@keyframes ind_fra_højre {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 </style>
