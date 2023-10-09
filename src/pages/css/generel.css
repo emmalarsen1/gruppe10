@@ -23,6 +23,12 @@ body {
   font-family: "Sora";
   background-color: #ebfbfe;
 }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
