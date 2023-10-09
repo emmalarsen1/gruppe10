@@ -27,10 +27,11 @@ console.log(myData);
 
 <MainLayouts>
     <section class="speakerpage">
+      <div class="imgfolder">
 	    <img src={myData.image} alt="placeholder">
+      </div>
         <div class="text">
     <h1>{myData.name}</h1>
-    <h2>{myData.title}</h2>
     <p>{myData.info}</p>
     <h4>{myData.talk}</h4>
     </div>
@@ -44,10 +45,36 @@ console.log(myData);
             gap: 3rem;
         }
 
-        .speakerpage img {
+        img {
             width: 400px;
             height: auto;
             border-radius: 50%;
+        }
+
+            .imgfolder {
+        display: inline-block;
+        position: relative;
+    }
+        .imgfolder::before {
+        content: '';
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        right: 0px;
+        bottom: 0px;
+        border: 2px solid #FFB6BE;
+        z-index: -1;
+    }
+
+        h4 {
+          color: #FED6DB;
+          background-color: #284D3B;
+          border: solid 1px black;
+          padding: 10px;
+          box-shadow: 5px 5px;
+        }
+        h1 {
+          font-size: 52px;
         }
 
         @media (max-width: 750px) {
