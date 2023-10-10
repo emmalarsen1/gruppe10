@@ -11,17 +11,31 @@ import MainLayouts from "../layouts/MainLayouts.astro";
       <h2 class="indexh2">CONFERENCE 20-21 MARCH 2024</h2>
       <Button ButtonTitle="TICKETS" ButtonLink="/tickets" />
     </div>
-    <img class="fakebon" src="../../public/bong.svg" alt="bon" />
-    <img src="../../public/logo_stort.svg" alt="logo">
+    <img class="fakebon" src="/bong.svg" alt="bon" />
   </section>
-  <section>
-    <div class="videobox"></div>
+  <div class="øverst">
+  <img src="/logo_stort.svg" alt="logo">
+  </div>
+  <section class="videobox">
     <video width="100%"  controls autoplay loop>
       <source src="../mov/uxfeel.webm" type="video/webm" />
        Your browser does not support the video tag.
     </video>
+    <h2 class="text">THAT UX COPENHAGEN FEEL</h2>
   </section>
-  <section></section>
+  <section>
+    <h2>FEATURED SPEAKERS</h2>
+  </section>
+  <section class="grid1_1">
+    <div>
+    <img class="img_str" src="../../img/ux_scene.webp" alt="ux scene">
+</div>
+<div>
+  <h2 class="farve">WHAT TO EXPECT</h2>
+  <p class="farve">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloribus itaque at molestiae ab commodi earum, minus sed. Iusto id ullam inventore aut beatae in nulla nihil expedita. Sunt, inventore.</p>
+</div>
+
+  </section>
 </MainLayouts>
 
 <style>
@@ -31,26 +45,36 @@ import MainLayouts from "../layouts/MainLayouts.astro";
     margin-right: 5%;
     flex-direction: column;
   }
-
   .fakebon {
     width: 50%;
     margin-left: 49%;
     margin-top: -8%;
-    z-index: -10;
+    rotate: -2deg;
+    order:0
   }
   .indexh2 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: lighter;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .indextext {
     margin-top: 5%;
   }
   .videobox {
     background-color: #ffe7e9;
-    padding: 30px;
+    padding-top: 80px;
+    padding-bottom: 2px;
+  }
+  .text{
+    text-align: end;
+    margin: 20px;
+    color: #284D3B;
+  }
+  .farve{
+    color: #ffe7e9;
+    margin: 20px;
   }
   @media (min-width: 500px){
      video{
@@ -58,10 +82,18 @@ import MainLayouts from "../layouts/MainLayouts.astro";
   align-self: stretch;
   height:450px;
   }
+  .grid1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #284D3B;
+    gap:20px;
+  }
+  .img_str{
+    margin: 25px;
+  }
   }
  main{
   max-width: none;
   margin: 0;
  }
-
 </style>

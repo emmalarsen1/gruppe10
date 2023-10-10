@@ -5,11 +5,15 @@ import MainLayouts from "../layouts/MainLayouts.astro";
 <MainLayouts>
   <section>
     <div>
+      <div>
       <img src="../img/billet1.svg" alt="billet1" />
+      </div>
+       <div>
       <h2>LIVE-EVENT</h2>
       <p>Join us live* in Copenhagen!</p>
       <h3>DKK 6,500</h3>
       <button>ADD TO CART</button>
+      </div>
     </div>
     <div>
       <img src="../img/billet1.svg" alt="billet1" />
@@ -41,4 +45,27 @@ import MainLayouts from "../layouts/MainLayouts.astro";
     margin: 5%;
     justify-content: center;
   }
+  button{
+    font-weight: bold;
+   color: #FFE7E9;
+   background-color: #2e3192;
+   border-style: none;
+   padding: 8px;
+   border-radius: 4px;
+   font-size: 1rem;
+   margin-top: 10px;
+   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);;
+}
+button:hover{
+      font-weight: bold;
+   color: #284D3B;
+   background-color: #FFE7E9;
+   border-style: none;
+   padding: 6px;
+   border-radius: 4px;
+   font-size: 1rem;
+   margin-top: 10px;
+   border: 2px solid #284D3B;
+}
+
 </style>
