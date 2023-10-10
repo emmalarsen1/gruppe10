@@ -11,10 +11,10 @@ import MainLayouts from "../layouts/MainLayouts.astro";
       <h2 class="indexh2">CONFERENCE 20-21 MARCH 2024</h2>
       <Button ButtonTitle="TICKETS" ButtonLink="/tickets" />
     </div>
-    <img class="fakebon" src="../../public/bong.svg" alt="bon" />
+    <img class="fakebon" src="/bong.svg" alt="bon" />
   </section>
-  <div>
-  <img src="../../public/logo_stort.svg" alt="logo">
+  <div class="øverst">
+  <img src="/logo_stort.svg" alt="logo">
   </div>
   <section class="videobox">
     <video width="100%"  controls autoplay loop>
@@ -49,15 +49,15 @@ import MainLayouts from "../layouts/MainLayouts.astro";
     width: 50%;
     margin-left: 49%;
     margin-top: -8%;
-    z-index: -10;
     rotate: -2deg;
+    order:0
   }
   .indexh2 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: lighter;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .indextext {
     margin-top: 5%;
@@ -96,5 +96,4 @@ import MainLayouts from "../layouts/MainLayouts.astro";
   max-width: none;
   margin: 0;
  }
-
 </style>
