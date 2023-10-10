@@ -3,17 +3,23 @@
 import '@fontsource-variable/sora';
 ---
 <footer>
+    <hr>
         <ol>
-            <div><li>VENUE 2024 <br>Big Bio Nordhan <br>Hamborg Plads 6 <br>2150 København</li></div>
+            <div><li><p>VENUE 2024</p>Big Bio Nordhan <br>Hamborg Plads 6 <br>2150 København</li></div>
             <div>
-<li>CONTACT</li> 
+<li><p>CONTACT</p></li> 
 <li><a href="http://hello@uxcopenhagen.com">hello@uxcopenhagen.com</a></li> 
 <li><a href="http://uxcopenhagen.com/terms-and-conditions.">Terms & conditions</a></li>
 <li><a href="http://uxcopenhagen.com/code-of-conduct/">COC</a></li>
 </div>
 <div>
-     <li>SOCIAL MEDIA</li>
-     <li><a href="https://www.facebook.com/uxcopenhagen">Facebook</a></li>
+     <li><p>SOCIAL MEDIA</p></li><br>
+     <div class="sm_logo">
+     <a href="https://www.facebook.com/uxcopenhagen"><img src="/img/facebook-1.svg" alt="facebooklogo"></a>
+     <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fuxcopenhagen"><img src="/img/twitter.svg" alt="twitterlogo"></a>
+     <a href="https://www.instagram.com/UXCopenhagen/"><img src="/img/instagram.svg" alt="instagramlogo"></a>
+</div>
+
 </div>
 
 </ol>
@@ -24,7 +30,7 @@ import '@fontsource-variable/sora';
 <style>
     ol{
     display: flex;
-    gap: 26%;
+    gap: 24%;
     list-style: none;
     place-content: center;
     font-size: 1rem;
@@ -33,5 +39,22 @@ import '@fontsource-variable/sora';
 a{
     text-decoration: none;
     font-family: 'Sora Variable', sans-serif;
+}
+.sm_logo{
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap:10px;
+}
+p{
+    color: #2e3192;
+    font-weight: bold;
+}
+li{
+     color: #2e3192;
+}
+hr{
+    color: #2e3192;
+    margin-top: 90px;
 }
 </style>
