@@ -61,7 +61,19 @@ The conference will be a hybrid event, offering in-person and online participati
 </MainLayouts>
 
 <style>
-    @media (min-width: 700px){  
+        .background-image {
+            display: none;
+        }
+         .background-image_1 {
+               display: none;
+        }
+        .background-image_2 {
+            display: none;
+        }
+         .background-image_3 {
+            display: none;
+        }
+    @media (min-width: 750px){  
 .grid1_1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,6 +104,7 @@ margin-bottom: 90px;
             height: 400px;
             transition: opacity 0.5s;
             margin: 30px;
+            display: block;
         }
          .background-image_1 {
             position: absolute;
@@ -101,6 +114,7 @@ margin-bottom: 90px;
             height: 400px;
             transition: opacity 0.5s;
                margin: 30px;
+               display: block;
         }
         
         .foreground-image {
@@ -130,6 +144,7 @@ margin-bottom: 90px;
             width: 300px;
             height: 400px;
             transition: opacity 0.5s;
+            display: block;
         }
          .background-image_3 {
             position: absolute;
@@ -138,6 +153,7 @@ margin-bottom: 90px;
             width: 300px;
             height: 400px;
             transition: opacity 0.5s;
+            display: block;
         }
         .container:hover .background-image_3  {
             opacity: 0;
