@@ -8,9 +8,9 @@ import "@fontsource-variable/arimo";
 
   <label for="menu-toggle" class="menu-icon">&#9776;</label>
   <ul id="menu-items">
-    <li><a href="/tickets/">TICKETS</a></li>
-    <li><a href="/talks/">TALKS</a></li>
-    <li><a href="/about/">ABOUT</a></li>
+    <li><a class="line" href="/tickets/">TICKETS</a></li>
+    <li><a class="line"href="/talks/">TALKS</a></li>
+    <li><a class="line"href="/about/">ABOUT</a></li>
   </ul>
 </nav>
 
@@ -24,6 +24,7 @@ import "@fontsource-variable/arimo";
 
   .logo {
     margin-right: 1rem; /* Adjust margin for spacing between logo and menu items */
+
   }
 
   ul {
@@ -39,10 +40,37 @@ import "@fontsource-variable/arimo";
     
   }
 
-  a {
+  /* a {
     text-decoration: none;
     font-family: "Arimo Variable", sans-serif;
   }
+  a:hover{
+      text-decoration: underline #2e3192;
+       transition: right 0.3s ease;
+    } */
+   .line {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+ font-family: "Arimo Variable", sans-serif;
+}
+
+a::before {
+  content: "";
+  display: block;
+  background-color: #2e3192;
+  height: 2px; /* Adjust this value for the underline thickness */
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
 
   /* Media query for responsiveness */
   @media screen and (max-width: 768px) {
@@ -60,9 +88,7 @@ import "@fontsource-variable/arimo";
       flex-direction: column;
       gap: 0.5rem; /* Adjust the gap between menu items in mobile view */
     }
-    a:hover{
-      text-decoration: underline #2e3192;
-    }
+    
   }
 
   /* Add styles for the burger menu */
