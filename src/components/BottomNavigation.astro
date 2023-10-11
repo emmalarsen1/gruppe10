@@ -30,26 +30,24 @@ import '@fontsource-variable/sora';
 
 <style>
     ol{
-    display: flex;
-    gap: 24%;
+   margin: 20px;
     list-style: none;
-    place-content: center;
-    font-size: 1rem;
-    margin: 30px;
 }
 a{
     text-decoration: none;
     font-family: 'Sora Variable', sans-serif;
 }
 .sm_logo{
-    width: 100%;
+    width: 45%;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap:10px;
+margin-top: -20px;
 }
 p{
     color: #2e3192;
     font-weight: bold;
+    margin-top: 25px;
 }
 li{
      color: #2e3192;
@@ -59,8 +57,30 @@ hr{
     margin-top: 50px;
 }
 .x_logo{
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+ @media (min-width: 750px){
+    .x_logo{
     width: 4%;
     margin: 0 auto;
     margin-top: 40px;
+}
+  ol{
+    display: flex;
+    gap: 24%;
+    list-style: none;
+    place-content: center;
+    font-size: 1rem;
+    margin: 30px;
+}
+p{
+    color: #2e3192;
+    font-weight: bold;
+}
+.sm_logo{
+    width: 100%;
+ }
 }
 </style>
