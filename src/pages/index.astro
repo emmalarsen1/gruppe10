@@ -31,7 +31,7 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
     </video>
     <h2 class="text">THAT UX COPENHAGEN FEEL</h2>
   </section>
-    <h2>FEATURED SPEAKERS</h2>
+    <h2 class="speakers_t" >FEATURED SPEAKERS</h2>
     <section class="speakers">
     {
         data.map((speaker) => {
@@ -104,7 +104,12 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
    padding-left:20px ;
    padding-right: 20px;
   }
-<<<<<<< HEAD
+  .speakers{
+    margin-bottom: 10%;
+  }
+  .speakers_t{
+    margin-top: 10%;
+  }
  
   @media (min-width: 750px){
       .speakers  {
@@ -123,9 +128,9 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
     background-color: #284D3B;
     gap:20px;
   }
-  .img_str{
+  /* .img_str{
     margin: 25px;
-  }
+  } */
   }
  
 </style>
