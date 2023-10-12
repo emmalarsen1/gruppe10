@@ -1,55 +1,60 @@
 ---
-import MainLayouts from "../layouts/MainLayouts.astro"
-import Speakers from "../components/Speakers.astro"
+import MainLayouts from "../layouts/MainLayouts.astro";
+import Speakers from "../components/Speakers.astro";
 
-const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speakerinfo",{
+const data = await fetch(
+  "https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speakerinfo",
+  {
     method: "GET",
     headers: {
-        apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBleHdib2FpZW92cm94amtjenNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQ1MDEwNzgsImV4cCI6MjAxMDA3NzA3OH0.6BHSqoC3DM7BXM7_X4Syq5W3u_U5MKO7EPClIkefExs"
+      apikey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBleHdib2FpZW92cm94amtjenNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQ1MDEwNzgsImV4cCI6MjAxMDA3NzA3OH0.6BHSqoC3DM7BXM7_X4Syq5W3u_U5MKO7EPClIkefExs",
     },
-}).then((res)=>res.json());
-
+  }
+).then((res) => res.json());
 ---
+
 <MainLayouts>
-    <h1 class="header">MEET OUR 2024 SPEAKERS. <br />
-WE’ERE ADDING MORE EVERY WEEK.</h1>
-<section class="speakers">
+  <h1 class="header">
+    MEET OUR 2024 SPEAKERS. <br />
+     WE’ERE ADDING MORE EVERY WEEK.
+  </h1>
+  <section class="speakers">
     {
-        data.map((speaker) => {
-            return <Speakers data={speaker} />;
-        })
-        }
-</section>
+      data.map((speaker) => {
+        return <Speakers data={speaker} />;
+      })
+    }
+  </section>
 </MainLayouts>
 
 <style>
-        section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 2.5rem;
-        margin-top: 2.5rem;
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  /*mobil*/
+  @media (max-width: 1250px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
-    .header{
-                margin-top:30px;
-            }
-        /*mobil*/
-                @media (max-width: 1250px) {
-            section {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        @media (max-width: 900px) {
-            section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            }
-            
-        }
-                    @media (max-width: 500px) {
-            section {
-            display: grid;
-            grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  }
+  @media (max-width: 900px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 500px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

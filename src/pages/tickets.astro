@@ -3,11 +3,11 @@ import MainLayouts from "../layouts/MainLayouts.astro";
 ---
 
 <MainLayouts>
-   <h1 class="overskift">TICKETS</h1>
+  <h1 class="overskift">TICKETS</h1>
   <section>
     <div>
-      <div  class="container">
-      <img class="billet" src="../img/billet1.svg" alt="billet1" />
+      <div class="container">
+        <img class="billet" src="../img/billet1.svg" alt="billet1" />
       </div>
       <h2>LIVE-EVENT</h2>
       <p>Join us live* in Copenhagen!</p>
@@ -15,87 +15,83 @@ import MainLayouts from "../layouts/MainLayouts.astro";
       <button>ADD TO CART</button>
     </div>
     <div>
-    <div class="container">
-      <img class="billet" src="/billet2.svg" alt="billet2" />
-    </div>
+      <div class="container">
+        <img class="billet" src="/billet2.svg" alt="billet2" />
+      </div>
       <h2>LIVE-STREAM</h2>
       <p>Watch the full live-stream !</p>
       <h3>DKK 3,500</h3>
       <button>ADD TO CART</button>
     </div>
-    </div>
-    <div>
+  </section>
+  <div>
     <div class="container">
       <img class="billet" src="/billet3.svg" alt="billet3" />
     </div>
-      <h2>RECORDED-EVENT</h2>
-      <p>Watch the full footage !</p>
-      <h3>DKK 2,400</h3>
-      <button>ADD TO CART</button>
-    </div>
-    <div>
+    <h2>RECORDED-EVENT</h2>
+    <p>Watch the full footage !</p>
+    <h3>DKK 2,400</h3>
+    <button>ADD TO CART</button>
+  </div>
+  <div>
     <div class="container">
       <img class="billet" src="/billet4.svg" alt="billet4" />
     </div>
-      <h2>GROUP-EVENT</h2>
-      <p>Please contact us</p>
-      <h3>Depends</h3>
-      <button>ADD TO CART</button>
-    </div>
-    </div>
-  </section>
+    <h2>GROUP-EVENT</h2>
+    <p>Please contact us</p>
+    <h3>Depends</h3>
+    <button>ADD TO CART</button>
+  </div>
 </MainLayouts>
+
 <style>
-
-   @media (min-width: 750px){
-     section {
-    display: flex;
-    gap: 3rem;
-    margin: 5%;
-    justify-content: center;
-  }
-  button{
-    font-weight: bold;
-   color: #FFE7E9;
-   background-color: #2e3192;
-   border-style: none;
-   padding: 8px;
-   border-radius: 4px;
-   font-size: 1rem;
-   margin-top: 10px;
-   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);;
-}
-button:hover{
+  @media (min-width: 750px) {
+    section {
+      display: flex;
+      gap: 3rem;
+      margin: 5%;
+      justify-content: center;
+    }
+    button {
       font-weight: bold;
-   color: #284D3B;
-   background-color: #FFE7E9;
-   border-style: none;
-   padding: 6px;
-   border-radius: 4px;
-   font-size: 1rem;
-   margin-top: 10px;
-   border: 2px solid #284D3B;
-}
-  .container {
-  position: relative;
-  width: 100% /* Adjust the width of the container as needed */
-}
+      color: #ffe7e9;
+      background-color: #2e3192;
+      border-style: none;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 1rem;
+      margin-top: 10px;
+      box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+      font-weight: bold;
+      color: #284d3b;
+      background-color: #ffe7e9;
+      border-style: none;
+      padding: 6px;
+      border-radius: 4px;
+      font-size: 1rem;
+      margin-top: 10px;
+      border: 2px solid #284d3b;
+    }
+    .container {
+      position: relative;
+      width: 100%; /* Adjust the width of the container as needed */
+    }
 
-.billet {
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
- 
-}
+    .billet {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+    }
 
-.container:hover .billet {
-  transform: scale(1.1); /* Increase the size of the logo on hover */
-}
-.overskift{
-  padding-top: 30px;
-margin-left: 85px;
-}
-}
-
+    .container:hover .billet {
+      transform: scale(1.1); /* Increase the size of the logo on hover */
+    }
+    .overskift {
+      padding-top: 30px;
+      margin-left: 85px;
+    }
+  }
 </style>
