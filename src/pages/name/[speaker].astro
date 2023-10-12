@@ -1,5 +1,5 @@
 ---
-import MainLayouts from "../../layouts/Mainlayouts.astro"
+import Mainlayouts from "../../layouts/Mainlayouts.astro"
 
 export async function getStaticPaths() {
   const data = await fetch(
@@ -25,7 +25,7 @@ const { myData } = Astro.props
 console.log(myData);
 ---
 
-<MainLayouts>
+<Mainlayouts>
     <section class="speakerpage">
       <div class="imgfolder">
 	    <img src={myData.image} alt="placeholder">
@@ -36,7 +36,7 @@ console.log(myData);
     <h4>{myData.talk}</h4>
     </div>
     </section>
-</MainLayouts>
+</Mainlayouts>
 
 <style>
         .speakerpage {

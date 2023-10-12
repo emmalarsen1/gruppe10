@@ -1,5 +1,5 @@
 ---
-import MainLayouts from "../layouts/Mainlayouts.astro";
+import Mainlayouts from "../layouts/Mainlayouts.astro";
 import Speakers from "../components/Speakers.astro";
 
 const data = await fetch(
@@ -14,7 +14,7 @@ const data = await fetch(
 ).then((res) => res.json());
 ---
 
-<MainLayouts>
+<Mainlayouts>
   <h1 class="header">
     MEET OUR 2024 SPEAKERS. <br />
      WE’ERE ADDING MORE EVERY WEEK.
@@ -26,7 +26,7 @@ const data = await fetch(
       })
     }
   </section>
-</MainLayouts>
+</Mainlayouts>
 
 <style>
   section {

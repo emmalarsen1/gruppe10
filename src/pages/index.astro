@@ -1,6 +1,6 @@
 ---
 import Button from "../components/Button.astro";
-import MainLayouts from "../layouts/Mainlayouts.astro";
+import Mainlayouts from "../layouts/Mainlayouts.astro";
 import Speakers from "../components/Speakers.astro";
 
 const data = await fetch(
@@ -15,7 +15,7 @@ const data = await fetch(
 ).then((res) => res.json());
 ---
 
-<MainLayouts>
+<Mainlayouts>
   <section class="bongrid">
     <div class="indextext">
       <p>The theme for UX Copenhagen 2024 is:</p>
@@ -65,7 +65,7 @@ const data = await fetch(
       <a class="read" href="/about">Read more</a>
     </div>
   </section>
-</MainLayouts>
+</Mainlayouts>
 
 <style>
   /* MOBIL*/
