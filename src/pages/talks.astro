@@ -11,7 +11,7 @@ const data = await fetch("https://pexwboaieovroxjkczsc.supabase.co/rest/v1/speak
 
 ---
 <MainLayouts>
-    <h1>MEET OUR 2024 SPEAKERS. <br />
+    <h1 class="header">MEET OUR 2024 SPEAKERS. <br />
 WE’ERE ADDING MORE EVERY WEEK.</h1>
 <section class="speakers">
     {
@@ -29,6 +29,9 @@ WE’ERE ADDING MORE EVERY WEEK.</h1>
         gap: 2.5rem;
         margin-top: 2.5rem;
     }
+    .header{
+                margin-top:30px;
+            }
         /*mobil*/
                 @media (max-width: 1250px) {
             section {
@@ -41,6 +44,7 @@ WE’ERE ADDING MORE EVERY WEEK.</h1>
             display: grid;
             grid-template-columns: 1fr 1fr;
             }
+            
         }
                     @media (max-width: 500px) {
             section {
