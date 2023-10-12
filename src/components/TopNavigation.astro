@@ -4,7 +4,9 @@ import "@fontsource-variable/arimo";
 ---
 
 <nav>
+  <div class="container">
   <a class="logo" href="/"><img src="/logo.svg" alt="logo" /></a>
+  </div>
 
   <label for="menu-toggle" class="menu-icon">&#9776;</label>
   <ul id="menu-items">
@@ -15,6 +17,23 @@ import "@fontsource-variable/arimo";
 </nav>
 
 <style>
+  .container {
+  position: relative;
+  width: 12% /* Adjust the width of the container as needed */
+
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+}
+
+.container:hover .logo {
+  transform: scale(1.1); /* Increase the size of the logo on hover */
+}
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -26,6 +45,11 @@ import "@fontsource-variable/arimo";
     margin-right: 1rem; /* Adjust margin for spacing between logo and menu items */
 margin-left: 50px;
   }
+  /* .logo:hover{
+    border: 1px solid #2e3192;
+    padding: 1px;
+    width: 9.8%;
+  } */
 
   ul {
     list-style: none;
