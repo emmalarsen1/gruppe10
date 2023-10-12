@@ -17,21 +17,23 @@ import "@fontsource-variable/arimo";
 </nav>
 
 <style>
-  .container {
+
+  /* LOGO */
+ 
+   .container {
   position: relative;
-  width: 12% /* Adjust the width of the container as needed */
+  width: 40% /* Adjust the width of the container as needed */
 
 }
-
 .logo {
   display: block;
-  width: 100%;
+  width: 30%;
   height: 100%;
-  transition: transform 0.3s ease; /* Add a smooth transition effect on hover */
+  transition: transform 0.3s ease;
 }
 
 .container:hover .logo {
-  transform: scale(1.1); /* Increase the size of the logo on hover */
+  transform: scale(1.1);
 }
 
   nav {
@@ -45,11 +47,6 @@ import "@fontsource-variable/arimo";
     margin-right: 1rem; /* Adjust margin for spacing between logo and menu items */
 margin-left: 50px;
   }
-  /* .logo:hover{
-    border: 1px solid #2e3192;
-    padding: 1px;
-    width: 9.8%;
-  } */
 
   ul {
     list-style: none;
@@ -59,19 +56,7 @@ margin-left: 50px;
     margin-right: 30px;
   }
 
-  li {
-    /* Adjust styles as needed */
-    
-  }
-
-  /* a {
-    text-decoration: none;
-    font-family: "Arimo Variable", sans-serif;
-  }
-  a:hover{
-      text-decoration: underline #2e3192;
-       transition: right 0.3s ease;
-    } */
+    /* LINE STYLE - DESKTOP */
    .line {
   text-decoration: none;
   display: inline-block;
@@ -106,6 +91,8 @@ a:hover::before {
     .logo {
       margin-bottom: 1rem; /* Adjust margin for spacing between logo and menu items in mobile view */
       margin-right: 0;
+      width: 40%;
+      margin-left: -1px;
       
 }
     ul {
@@ -113,6 +100,11 @@ a:hover::before {
       gap: 0.5rem; /* Adjust the gap between menu items in mobile view */
     }
     
+     .container {
+  position: relative;
+  width: 70% /* Adjust the width of the container as needed */
+
+}
   }
 
   /* Add styles for the burger menu */
