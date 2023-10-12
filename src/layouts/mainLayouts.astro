@@ -1,23 +1,22 @@
 ---
-import TopNavigation from "../components/TopNavigation.astro"
-import BottomNavigation from "../components/BottomNavigation.astro"
-import "../pages/css/generel.css"
+import TopNavigation from "../components/TopNavigation.astro";
+import BottomNavigation from "../components/BottomNavigation.astro";
+import "../css/generel.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>uxcopenhagen</title>
-	
-	</head>
-	<body>
-	<TopNavigation/>
-	<main>
-        <slot/>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>uxcopenhagen</title>
+  </head>
+  <body>
+    <TopNavigation />
+    <main>
+      <slot />
     </main>
-	<BottomNavigation/>
-	</body>
+    <BottomNavigation />
+  </body>
 </html>
